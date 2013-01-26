@@ -2,7 +2,8 @@
 
 	define('SITE_ROOT', 'http://www.fernandojascovich.com.ar');
 
-	$service_url = SITE_ROOT . '/cgi-bin/test.py';
+	//$service_url = SITE_ROOT . '/cgi-bin/test.py';
+	$service_url = 'cgi-bin/test.py';
 	$headers = array(
 			    	'Accept: application/json'
 				);
