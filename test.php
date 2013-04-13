@@ -1,9 +1,8 @@
 <?php
 
-	define('SITE_ROOT', 'http://www.fernandojascovich.com.ar');
+	define('SITE_ROOT', 'http://localhost/personal-site/');
 
-	//$service_url = SITE_ROOT . '/cgi-bin/test.py';
-	$service_url = 'cgi-bin/test.py';
+	$service_url = SITE_ROOT . 'cgi-bin/main.py';
 	$headers = array(
 			    	'Accept: application/json'
 				);
@@ -17,6 +16,6 @@
 
 	curl_close($ch);
 
-	var_dump($response);
+	print_r($response);
 
 ?>
