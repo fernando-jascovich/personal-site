@@ -2,8 +2,8 @@
 # -*- coding: UTF-8 -*-
 
 # enable debugging
-import cgitb
-cgitb.enable()
+#import cgitb
+#cgitb.enable()
 
 import model.util
 
