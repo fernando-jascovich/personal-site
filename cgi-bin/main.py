@@ -15,7 +15,7 @@ import model.util
 print 'Content-type: text/html'
 print
 
-
+'''
 class BasePage:
     def __init__(self):
         self.name = 'base'
@@ -25,7 +25,7 @@ class BasePage:
         "geek": "",
         "contact": ""
         }
-
+'''
 #model.util.createDataModel(BasePage())
 
 #data = model.util.getDataModel('base')
