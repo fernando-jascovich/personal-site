@@ -2,15 +2,15 @@
 # -*- coding: UTF-8 -*-
 
 # enable debugging
-#import cgitb
-#cgitb.enable()
+import cgitb
+cgitb.enable()
 
 import model.util
 
 print 'Content-type: text/html'
 print
 
-'''
+
 class BasePage:
     def __init__(self):
         self.name = 'base'
@@ -20,11 +20,10 @@ class BasePage:
         "geek": "",
         "contact": ""
         }
-'''
-#model.util.createDataModel(BasePage())
 
-#data = model.util.getDataModel('base')
+model.util.createDataModel(BasePage())
 
-#print data["home"]
-print 'fer'
+data = model.util.getDataModel('base')
+
+print data["home"]
 print "\n"
