@@ -1,9 +1,9 @@
 <?php
 
 	//define('SITE_ROOT', 'http://localhost/personal-site/');
-	define('SITE_ROOT', 'http://www.fernandojascovich.com.ar/test/');
+	//define('SITE_ROOT', 'http://www.fernandojascovich.com.ar/test/');
 
-	var_dump(SITE_ROOT);
+	var_dump('fer');
 	/*
 
 	$service_url = SITE_ROOT . 'cgi-bin/main.py';
