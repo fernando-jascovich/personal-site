@@ -26,10 +26,9 @@ class BasePage:
         "contact": ""
         }
 
-#model.util.createDataModel(BasePage())
+model.util.createDataModel(BasePage())
 
-#data = model.util.getDataModel('base')
+data = model.util.getDataModel('base')
 
-#print data["home"]
-print 'hello!.'
+print data["home"]
 print "\n"
