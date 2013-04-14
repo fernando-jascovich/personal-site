@@ -1,6 +1,7 @@
 <?php
 
-	define('SITE_ROOT', 'http://localhost/personal-site/');
+	//define('SITE_ROOT', 'http://localhost/personal-site/');
+	define('SITE_ROOT', 'http://www.fernandojascovich.com.ar/test/');
 
 	$service_url = SITE_ROOT . 'cgi-bin/main.py';
 	$headers = array(
