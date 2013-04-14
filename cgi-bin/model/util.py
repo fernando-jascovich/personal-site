@@ -19,8 +19,8 @@ def createDataModel(self):
     if not os.path.exists(relpath + '/json'):
         os.mkdir(relpath + '/json', 0755)
 
-    with open(relpath + '/json/' + self.name + '.json', 'w') as outfile:
-        json.dump(self.pages, outfile)
+    outfile = open(relpath + '/json/' + self.name + '.json', 'w')
+    json.dump(self.pages, outfile)
 
 
 def getDataModel(self):
