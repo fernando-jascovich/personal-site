@@ -6,24 +6,15 @@ import cgitb
 cgitb.enable()
 
 import model.util
+import view.head
 
 print 'Content-type: text/html'
 print
 
+page = model.util.BasePage('no-token')
+data = model.util.getDataModel(page)
 
-class BasePage:
-    def __init__(self):
-        self.name = 'base'
-        self.pages = {
-        "home": "",
-        "abstract": "",
-        "geek": "",
-        "contact": ""
-        }
-
-model.util.createDataModel(BasePage())
-
-data = model.util.getDataModel('base')
-
-print data["home"]
-print "\n"
+print view.head.getHead('js')
+print '<html>'
+print data
+print '</html>'

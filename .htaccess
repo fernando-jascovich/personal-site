@@ -2,7 +2,7 @@ Options +ExecCGI
 AddHandler cgi-script .py
 
 IndexIgnore *
-DirectoryIndex test.php
+DirectoryIndex frontend.php
 
 RewriteEngine on
 
