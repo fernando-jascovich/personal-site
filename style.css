@@ -199,6 +199,7 @@ form > div > textarea:focus
     display: inline-block;
     vertical-align: top;
     text-align: left;
+    zoom: 1;
 }
 
 .computer > .computerBackground
@@ -248,6 +249,7 @@ form > div > textarea:focus
     height: 231px;
     position: relative;
     text-align: left;
+    zoom: 1;
 }
 
 .side > .title
