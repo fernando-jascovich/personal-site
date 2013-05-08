@@ -18,8 +18,8 @@ def getMetaTags(self):
     if self == 'backend' or self == 'no-js':
         metaTag.append('<meta name="robots" content="noindex">')
     else:
-        metaTag.append('<meta name="keywords" content="fernando jascovich web developer programming programmer code geek nerd php ruby python java"')
-        metaTag.append('<meta name="description" content="Personal website"')
+        metaTag.append('<meta name="keywords" content="fernando jascovich web developer programming programmer code geek nerd php ruby python java" />')
+        metaTag.append('<meta name="description" content="Personal website" />')
     metaTag.append('<title>' + os.environ['HTTP_HOST'] + ' | %s</title>' % self)
     return metaTag
 
