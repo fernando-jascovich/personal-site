@@ -6,19 +6,9 @@ body
     font-size: 11px;
     line-height: 1.5em;
     color: #666666;
+    background: url('img/light_wool.png') center repeat;
     background-attachment: fixed;
     overflow: hidden;
-}
-
-body.backend
-{
-    background: url('img/light_wool.png') center repeat;
-}
-
-body.frontend
-{
-    background: url('img/squairy_light.png') center repeat;
-    overflow: auto;
 }
 
 ul
@@ -173,66 +163,27 @@ form > div > textarea:focus
     color: #ffffff;
 }
 
-.verticalFloater
-{
-    float: left;
-    height: 50%;
-    margin-bottom: -160px;
-}
-
-
 .mainContainer
 {
 	width: 90%;
 	margin: auto;
-    text-align: center;
-    height: 231px;
-    clear: both;
 }
 
 .computer
 {
-	background: url('img/icon-computer.png') bottom no-repeat;
-	width: 189px;
-	height: 231px;
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
+	background: url('img/icon-computer.png') center no-repeat;
+	width: 275px;
+	height: 275px;
 }
 
-.computer > .computerBackground
+.computer > .skills
 {
-    background-color: #333;
-    width: 172px;
-    height: 120px;
-    position: absolute;
-    top: 25px;
-    left: 8px;
-    z-index: -1;
-    overflow: hidden;
-}
 
-.computer > .computerBackground > .skills
-{
-	font-family: 'Courier New', Arial, sans-serif;
-    position: absolute;
-    top: 92px;
-    left: 15px;
-    z-index: -1;
-    color: #00FF1F;
-    width: 154px;
 }
 
 .computer > .led
 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    bottom: 11px;
-    left: 85px;
-    background: url('img/red.gif') center no-repeat;
-    z-index: -1;
+
 }
 
 .computer > .icon
@@ -242,176 +193,20 @@ form > div > textarea:focus
 
 .side
 {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 2em;
-    height: 231px;
-    position: relative;
-    text-align: left;
+
 }
 
 .side > .title
 {
-    font-size: 10em;
-    line-height: 1em;
-    font-family: 'Roboto Slab', serif;
-    color: #B8B8B8;
+
 }
 
 .side > .tag
 {
-    font-size: 1.5em;
+
 }
 
 .side > .arrow
 {
-    background: url('img/arrow-down.png') center no-repeat;
-    width: 46px;
-    height: 59px;
-    position: absolute;
-    bottom: 1px;
-    opacity: 0.4;
-    cursor: pointer;
-}
 
-.side > .arrow:hover
-{
-    opacity: 0.6;
-}
-
-.contactContainer
-{
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    display: none;
-    clear: both;
-}
-
-.contactContainer > .contactItemContainer
-{
-    display: inline-block;
-    text-align: left;
-}
-
-.contactContainer > .contactItemContainer > .homeArrow
-{
-    width: 70px;
-    height: 70px;
-    background: url('img/arrow-home.png') center no-repeat;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.contactContainer > .contactItemContainer > .item
-{
-    color: #000;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.contactContainer > .contactItemContainer > .homeArrow:hover,
-.contactContainer > .contactItemContainer > .item:hover
-{
-    opacity: 0.7;
-}
-
-.contactContainer > .contactItemContainer > .item > .link
-{
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-.contactContainer > .contactItemContainer > .item > .link.github
-{
-    background: url('img/github.png') center no-repeat;
-}
-
-.contactContainer > .contactItemContainer > .item > .link.skype
-{
-    background: url('img/skype.png') center no-repeat;
-}
-
-.contactContainer > .contactItemContainer > .item > .link.linkedin
-{
-    background: url('img/linkedin.png') center no-repeat;
-}
-
-.contactContainer > .contactItemContainer > .item > .link.icq
-{
-    background: url('img/icq.png') center no-repeat;
-}
-
-.contactContainer > .contactItemContainer > .item > .link.twitter
-{
-    background: url('img/twitter.png') center no-repeat;
-}
-
-.contactContainer > .contactItemContainer > .item > .link.mail
-{
-    background: url('img/mail.png') center no-repeat;
-}
-
-.contactContainer > .contactItemContainer > .item > .text
-{
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.3em;
-    line-height: 1em;
-    margin-left: 1em;
-    cursor: pointer;
-}
-
-.linksContainer
-{
-    position: absolute;
-    top: 0;
-    text-align: center;
-    width: 100%;
-    z-index: 2;
-}
-
-.linksContainer > .links
-{
-    display: inline-block;
-}
-
-.linksContainer > .links > .linksItself
-{
-    background-color: #FFF;
-    z-index: 1;
-    position: relative;
-    border-radius: 0 0 0.5em 0.5em;
-    box-shadow: 0 0 1em #C5C5C5;
-    display: none;
-}
-
-.linksContainer > .links > .linksItself > a
-{
-    font-size: 1.2em;
-    display: inline-block;
-    color: #999;
-    padding: 0.5em;
-    text-decoration: none;
-}
-
-.linksContainer > .links > .linksItself > a:hover
-{
-    text-decoration: underline;
-}
-
-.linksContainer > .links > .linksButton
-{
-    display: inline-block;
-    background-color: #FFF;
-    padding: 0.5em;
-    font-family: 'Roboto Slab', serif;
-    color: #999;
-    border-radius: 0 0 0.5em 0.5em;
-    font-size: 2.5em;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 0 1em #C5C5C5;
 }

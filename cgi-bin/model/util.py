@@ -9,7 +9,7 @@ except ImportError:
 import os
 import string
 import md5
-
+from xml.dom.minidom import parseString
 
 class BasePage:
 
@@ -17,7 +17,6 @@ class BasePage:
         self.name = 'base'
         self.pages = {
         "Home": "",
-        "Abstract": "",
         "Contact": ""
         }
         self.inputs = {}
@@ -78,3 +77,9 @@ def sanitize(name):
     new_name = ''.join(character for character in name if character in acceptable_characters)
     assert len(new_name) > 0 and new_name[0] not in string.digits + '_', "change %r to %r; is still invalid" % (name, new_name)
     return new_name.lower()
+
+
+def getXMLData(nodeStr, tagName):
+    xmlNode = parseString('<node>' + nodeStr + '</node>')
+    xmlNodeTag = xmlNode.getElementsByTagName(tagName)[0].toxml()
+    return xmlNodeTag.replace('<' + tagName + '>', '').replace('</' + tagName + '>', '')

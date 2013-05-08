@@ -76,7 +76,7 @@ if post.getvalue('useremail') != None and post.getvalue('token') == None:
     userpassword.update(post.getvalue('userpassword'))
 
     if md5Pass == userpassword.hexdigest():
-        print view.head.getHead('js')
+        print view.head.getHead('backend')
         print '<html>'
         print view.header.getSimpleHeader(page)
         print view.body.getBackEndBody(page, data)
@@ -85,7 +85,7 @@ if post.getvalue('useremail') != None and post.getvalue('token') == None:
         print 'The password is incorrect'
         raise SystemExit()
 elif post.getvalue('token') != None:
-    print view.head.getHead('js')
+    print view.head.getHead('backend')
     print '<html>'
     print view.header.getSimpleHeader(page)
     print view.body.getBackEndBody(page, data)

@@ -30,7 +30,10 @@ def getStyleSheet(self):
 def getScripts(self):
     scripts = []
     scripts.append('<script src="js/jquery-1.9.1.min.js"></script>')
-    scripts.append('<script src="js/main.js"></script>')
+    if self == 'backend':
+        scripts.append('<script src="js/backend.js"></script>')
+    else:
+        scripts.append('<script src="js/frontend.js"></script>')
     return scripts
 
 
