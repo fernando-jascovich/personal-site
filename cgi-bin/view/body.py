@@ -48,18 +48,18 @@ def getLoginBody(postdata):
 def getMainPage(title, tag, skills):
     returnHtml = []
     returnHtml.append('<div id="home" class="mainContainer">')
-    returnHtml.append('<div class="computer">')
+    returnHtml.append('<span class="computer">')
     returnHtml.append('<div class="computerBackground">')
     returnHtml.append('<div id="console" class="skills">%s</div>' % skills)
     returnHtml.append('</div>')
     returnHtml.append('<div class="led"></div>')
     returnHtml.append('<div class="icon"></div>')
-    returnHtml.append('</div>')
-    returnHtml.append('<div class="side">')
+    returnHtml.append('</span>')
+    returnHtml.append('<span class="side">')
     returnHtml.append('<div class="title">%s</div>' % title)
     returnHtml.append('<div class="tag">%s</div>' % tag)
     returnHtml.append('<div id="contactLink" class="arrow"></div>')
-    returnHtml.append('</div>')
+    returnHtml.append('</span>')
     returnHtml.append('</div>')
     return ''.join(returnHtml)
 
