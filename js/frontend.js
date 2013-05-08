@@ -70,11 +70,23 @@ function toggleLinks(event)
 
 function bindHandlers(event)
 {
-    $('#contactLink').on('click', showContact);
-    $('#homeLink').on('click', showHome);
-    setInterval('updateConsole();', 1500);
-    $('.item').on('click', openLink);
-    $('#links').on('click', toggleLinks);
+    var matchIE = /MSIE\s([\d]+)/;
+
+    if(matchIE.test(navigator.userAgent))
+    {
+        var IEData = matchIE.exec(navigator.userAgent)[0];
+        var IEVersion = parseInt(/\d+/.exec(IEData)[0]);
+        if(IEVersion < 10)
+            $('body').html('<center>Sorry, IE10+ or any another real DOM browser.</center>');
+    } 
+    else
+    {
+        $('#contactLink').on('click', showContact);
+        $('#homeLink').on('click', showHome);
+        setInterval('updateConsole();', 1500);
+        $('.item').on('click', openLink);
+        $('#links').on('click', toggleLinks);
+    }
 }
 
-$(document).on('ready', bindHandlers);
+$(document).on('ready', bindHandlers);    
