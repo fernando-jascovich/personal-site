@@ -31,7 +31,7 @@ if post.getvalue('token'):
         if post.getvalue('token') != tokenDataModel['token']:
             raise ValueError("Invalid token. You're not really authenticated, don't you?")
 
-    except ValueError as inst:
+    except ValueError, inst:
         print inst
         raise SystemExit()
 
