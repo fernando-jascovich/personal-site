@@ -34,6 +34,7 @@ def getStyleSheet(self):
 
 def getScripts(self):
     scripts = []
+    scripts.append('<script src="js/modernizr.custom.js"></script>')
     scripts.append('<script src="js/jquery-1.9.1.min.js"></script>')
     if self == 'backend':
         scripts.append('<script src="js/backend.min.js"></script>')
