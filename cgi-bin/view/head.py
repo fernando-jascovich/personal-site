@@ -14,7 +14,7 @@ def getDoctype(self):
 def getMetaTags(self):
     metaTag = []
     metaTag.append('<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />')
-    metaTag.append('<meta name="viewport" content="width=device-width, initial-scale=1" />')
+    metaTag.append('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />')
     if self == 'backend' or self == 'no-js':
         metaTag.append('<meta name="robots" content="noindex">')
     else:
