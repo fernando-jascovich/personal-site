@@ -11,6 +11,7 @@ import string
 import md5
 from xml.dom.minidom import parseString
 
+
 class BasePage:
 
     def __init__(self, token):
